@@ -1,7 +1,7 @@
 {
   "name": "use-scroll-navigation",
   "version": "1.0.1",
-  "description": "",
+  "description": "A React Hook for getting the first visible element in a scrollable container",
   "author": {
     "name": "Filipe Mariano",
     "email": "filipe.mariano.freire@gmail.com",

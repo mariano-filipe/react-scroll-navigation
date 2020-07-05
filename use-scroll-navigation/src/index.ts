@@ -1,1 +1,1 @@
-export { default as useScrollNavigation } from './useScrollNavigation';
+export { default as useScrollNavigation } from "./useScrollNavigation";
