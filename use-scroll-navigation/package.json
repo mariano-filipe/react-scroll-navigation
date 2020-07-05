@@ -31,6 +31,5 @@
   },
   "bugs": {
     "url": "https://github.com/mariano-filipe/react-scroll-navigation/issues"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  }
 }
