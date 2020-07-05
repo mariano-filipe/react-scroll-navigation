@@ -1,24 +1,40 @@
 {
   "name": "example",
-  "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "next build",
-    "dev": "next",
-    "develop": "yarn dev",
-    "export": "next export",
-    "package": "yarn build && yarn export",
-    "refresh": "yarn install --force",
-    "start": "next start"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "next": "^9.3.4",
+    "@material-ui/core": "^4.11.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
-  "private": true
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.6",
+    "react-scripts": "3.4.1",
+    "typescript": "~3.7.2"
+  }
 }

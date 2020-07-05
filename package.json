@@ -6,16 +6,20 @@
   ],
   "scripts": {
     "build": "yarn build:hook && yarn build:example",
-    "build:example": "yarn workspace example package",
+    "build:example": "yarn workspace example build",
     "build:hook": "yarn workspace use-scroll-navigation build",
     "bump": "yarn workspace use-scroll-navigation bump",
-    "develop": "yarn watch",
+    "dev": "yarn watch",
     "watch": "concurrently -n Hook,Example \"yarn watch:hook\" \"yarn watch:example\"",
-    "watch:example": "yarn workspace example develop",
-    "watch:hook": "yarn workspace use-scroll-navigation watch",
-    "setup": "node ./scripts/setup.js"
+    "watch:example": "yarn workspace example start",
+    "watch:hook": "yarn workspace use-scroll-navigation watch"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "prettier": "^2.0.5"
   }
 }
