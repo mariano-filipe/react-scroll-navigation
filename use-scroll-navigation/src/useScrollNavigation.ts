@@ -1,25 +1,10 @@
 import { useEffect, useState, useCallback } from "react";
 
-interface UseScrollNavigationProps {
-  scrollableContainer?: EventTarget;
-  scrollableTargets: HTMLElement[];
-  offsetTop?: number;
-}
-
-interface ScrollToOptions {
-  behavior: ScrollBehavior;
-}
-
-interface UseScrollNavigationReturn {
-  hitTargetIndex: number;
-  scrollTo: (targetIndex: number, options?: ScrollToOptions) => void;
-}
-
 const useScrollNavigation = ({
   scrollableContainer,
   scrollableTargets,
   offsetTop = 0,
-}: UseScrollNavigationProps): UseScrollNavigationReturn => {
+}: UseScrollNavigationProps): UseScrollNavigationState => {
   const [topOffsets, setTopOffsets] = useState<number[]>([]);
   const [hitTargetIndex, setHitTargetIndex] = useState(0);
   const [targetIndex, setTargetIndex] = useState<number>();
