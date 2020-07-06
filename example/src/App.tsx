@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { AppBar, Tabs, Tab, Typography, makeStyles, Paper } from "@material-ui/core";
 
-import { useScrollNavigation } from "../../use-scroll-navigation/dist";
+import useScrollNavigation from "../../use-scroll-navigation/dist";
 
 interface ExampleSection {
   id: number;
