@@ -1,6 +1,6 @@
 {
   "name": "use-scroll-navigation",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A React Hook for getting the first visible element in a scrollable container",
   "author": {
     "name": "Filipe Mariano",
@@ -8,7 +8,7 @@
     "url": "https://github.com/mariano-filipe"
   },
   "main": "dist/index.js",
-  "types": "useScrollNavigation.d.ts",
+  "types": "dist/useScrollNavigation.d.ts",
   "license": "MIT",
   "scripts": {
     "build": "tsc",

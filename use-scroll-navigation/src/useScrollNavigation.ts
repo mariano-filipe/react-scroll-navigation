@@ -1,5 +1,20 @@
 import { useEffect, useState, useCallback } from "react";
 
+export interface UseScrollNavigationProps {
+  scrollableContainer?: EventTarget;
+  scrollableTargets: HTMLElement[];
+  offsetTop?: number;
+}
+
+export interface ScrollToOptions {
+  behavior: ScrollBehavior;
+}
+
+export interface UseScrollNavigationState {
+  hitTargetIndex: number;
+  scrollTo: (targetIndex: number, options?: ScrollToOptions) => void;
+}
+
 const useScrollNavigation = ({
   scrollableContainer,
   scrollableTargets,
