@@ -1,20 +1,15 @@
 {
+  "name": "react-scroll-navigation",
   "private": true,
   "workspaces": [
-    "example",
-    "use-scroll-navigation"
+    "packages/**"
   ],
   "scripts": {
-    "build": "yarn build:hook && yarn build:example",
-    "build:example": "yarn workspace example build",
-    "build:hook": "yarn workspace use-scroll-navigation build",
-    "bump": "yarn workspace use-scroll-navigation bump",
-    "dev": "yarn watch",
-    "watch": "concurrently -n Hook,Example \"yarn watch:hook\" \"yarn watch:example\"",
-    "watch:example": "yarn workspace example start",
-    "watch:hook": "yarn workspace use-scroll-navigation watch"
+    "build": "lerna run build",
+    "watch:hook": "yarn workspace use-scroll-navigation watch",
+    "watch:materialui-example": "yarn workspace materialui-example start"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "lerna": "^3.22.1"
   }
 }
